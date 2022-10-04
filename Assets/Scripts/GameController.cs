@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private string nomeDoLevelDeJogo;
     public float VelCamera = 1;
     public float LimiteCenarios;   
-    //teste
+    //O LACA É FODA
 
     // Start is called before the first frame update
     void Start()
