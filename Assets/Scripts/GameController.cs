@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     public float VelCamera = 1;
     public float LimiteCenarios;   
     //O LACA É FODA
-// eh mintira
+    //A SAVINA É FODA
     // Start is called before the first frame update
     void Start()
     {

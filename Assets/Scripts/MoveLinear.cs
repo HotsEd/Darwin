@@ -9,7 +9,7 @@ public class MoveLinear : MonoBehaviour
     {
     transform.position += dir * speed * Time.deltaTime;        
     }
-
+    // o henrique é mais ou menos
     void OnTriggerEnter(Collider col){
 
         if(col.tag == "Enemy"){
