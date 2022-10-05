@@ -11,6 +11,7 @@ public class PlayerGun : MonoBehaviour
             GameObject clone = Instantiate(obj, transform.position, transform.rotation);
             Destroy(clone,0.3f);
         }
+        
 
     }
 }
