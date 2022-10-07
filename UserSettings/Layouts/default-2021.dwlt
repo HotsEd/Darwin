@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 25
+  controlID: 48
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 26
+  controlID: 49
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 27
+  controlID: 20
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,22 +316,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/lacarreta/Documents/GitHub/Darwin
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b85d0000
-    m_LastClickedID: 23992
-    m_ExpandedIDs: 00000000a85d0000b45d0000ba5d0000d0d4000000ca9a3b
+    scrollPos: {x: 0, y: 102.176056}
+    m_SelectedIDs: 225c0000
+    m_LastClickedID: 23586
+    m_ExpandedIDs: 00000000085c00000a5c00000c5c0000145c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -359,7 +359,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 00000000085c00000a5c00000c5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -450,7 +450,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 865
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e8200100
-      m_LastClickedID: 73960
-      m_ExpandedIDs: 6aa3feff72b3feff76b3feffb6b4feff0cf0fefff428ffff6058ffff9cecffff9cf9ffff38fbffff525c0000785c000096e70000c2e7000046ef0000eeef00008cf10000c0f10000eef10000
+      m_SelectedIDs: 62d90000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 44faffff38fbffff8a5e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -622,7 +622,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -738,9 +738,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1, z: -10}
+    m_Target: {x: -27.347204, y: 0.4337557, z: 0.682241}
     speed: 2
-    m_Value: {x: 0, y: 1, z: -10}
+    m_Value: {x: -27.347483, y: 0.4337776, z: 0.6823065}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -791,9 +791,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 8.741864
     speed: 2
-    m_Value: 12.124355
+    m_Value: 8.735312
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -811,7 +811,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.14822504, y: 0.73274434, z: -0.1691032, w: -0.6422765}
+  m_LastSceneViewRotation: {x: -0.10248353, y: 0.7146432, z: -0.10713784, w: -0.68359816}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -892,7 +892,7 @@ MonoBehaviour:
       y: 21
       width: 785
       height: 453.5
-    m_Scale: {x: 0.81852615, y: 0.81852615}
+    m_Scale: {x: 0.81852615, y: 0.818526}
     m_Translation: {x: 392.5815, y: 226.75}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -901,9 +901,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -479.62
-      y: -277.0223
+      y: -277.02234
       width: 959.04083
-      height: 554.0446
+      height: 554.0447
     m_MinimalGUI: 1
   m_defaultScale: 0.8177083
   m_LastWindowPixelSize: {x: 1570, y: 949}

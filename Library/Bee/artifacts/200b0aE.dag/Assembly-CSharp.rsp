@@ -362,6 +362,7 @@
 "Assets/Scripts/MovePlayer.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/PlayerGun.cs"
+"Assets/Scripts/PlayerSpecial.cs"
 "Assets/Scripts/TiroEnemy.cs"
 "Assets/Scripts/TorretaEnemy.cs"
 "Assets/Scripts/TriggerCenario.cs"
