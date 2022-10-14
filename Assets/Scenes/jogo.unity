@@ -1164,19 +1164,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &390113015
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390113011}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &390113016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1313,19 +1300,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
   m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
---- !u!65 &402077451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402077447}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!114 &402077459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,19 +1351,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &421412630
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421412627}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &421412631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1794,19 +1755,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &553262590
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553262587}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &553262591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2902,7 +2850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &897032537
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3124,19 +3072,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &900793049
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900793046}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &900793050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3313,19 +3248,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &975577184
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975577180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &975577185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4331,8 +4253,8 @@ GameObject:
   - component: {fileID: 1328861217}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: GameController
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4350,6 +4272,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraPrincipal: {fileID: 622903958}
   nomeDoLevelDeJogo: Menu
+  vidasImages:
+  - {fileID: 850623145}
+  - {fileID: 903324515}
+  - {fileID: 1172915836}
+  vidas: 3
   VelCamera: 2
   LimiteCenarios: 24
 --- !u!4 &1328861218
@@ -5068,19 +4995,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &1587138771
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587138767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &1587138772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5405,19 +5319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09640526050074f04a0eaaa69e4708c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1887684791
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887684789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033181705, y: 0.0331817, z: 0.07621957}
-  m_Center: {x: 5.91868e-17, y: -0.0000000027939675, z: 0.004164901}
 --- !u!65 &1887684792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6106,7 +6007,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096233674}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.57517064, z: 1}

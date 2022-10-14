@@ -37,4 +37,14 @@ public class characterMovement : MonoBehaviour
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftBorder, rigthBorder), Mathf.Clamp(transform.position.y, topBorder, bottomBorder), transform.position.z);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            GameController.Instance().PerderVidas();
+            
+            Destroy(other.gameObject);
+        }
+    }
 }

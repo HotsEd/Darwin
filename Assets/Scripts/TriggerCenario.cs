@@ -22,7 +22,7 @@ public class TriggerCenario : MonoBehaviour
     void OnTriggerEnter(Collider col){
 
         if(col.tag == "Player"){
-            controlador.ReiniciarLevel();
+            //controlador.ReiniciarLevel();
         }
         
     }
