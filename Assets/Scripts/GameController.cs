@@ -11,12 +11,13 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private string nomeDoLevelDeJogo;
     [SerializeField] private List<GameObject> vidasImages;
-    [SerializeField] private int vidas = 3;
+    private  int vidas ;
     public float VelCamera = 1;
     public float LimiteCenarios;   
    
     void Awake()
     {
+        
         GameObject[] gameControllers = GameObject.FindGameObjectsWithTag("GameController");
 
         if (gameControllers.Length > 1)
@@ -25,6 +26,7 @@ public class GameController : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         instance = this;
+        
     }
 
     public static GameController Instance()
@@ -56,23 +58,26 @@ public class GameController : MonoBehaviour
     public void PerderVidas()
     {
         vidas--;
-
+         Debug.Log(vidas);
         if(vidas== 2)
         {
+          //  Debug.log("");
             vidasImages[0].SetActive(false);
+
             Destroy(vidasImages[0]);
-            Application.LoadLevel(Application.loadedLevel);
+
+            SceneManager.LoadScene("jogo");
         }
         if(vidas== 1)
         {
             vidasImages[1].SetActive(false);
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene("jogo");
         }
         if(vidas== 0)
         {
             vidasImages[2].SetActive(false);
-            Application.LoadLevel(Application.loadedLevel);
-            
+            SceneManager.LoadScene("jogo");
+
         }
         
         
