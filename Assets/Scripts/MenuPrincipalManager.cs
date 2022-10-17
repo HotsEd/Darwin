@@ -18,4 +18,3 @@ public class MenuPrincipalManager : MonoBehaviour
         Application.Quit();
     }
 }
-
