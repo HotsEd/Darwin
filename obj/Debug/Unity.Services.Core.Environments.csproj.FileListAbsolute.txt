@@ -1,0 +1,1 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.Services.Core.Environments.csproj.CoreCompileInputs.cache

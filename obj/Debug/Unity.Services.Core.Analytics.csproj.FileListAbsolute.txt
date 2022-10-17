@@ -1,0 +1,2 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.Services.Core.Analytics.csproj.AssemblyReference.cache
+C:\Users\Henrique\darwin\obj\Debug\Unity.Services.Core.Analytics.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.Performance.Profile-Analyzer.Editor.csproj.AssemblyReference.cache
+C:\Users\Henrique\darwin\obj\Debug\Unity.Performance.Profile-Analyzer.Editor.csproj.CoreCompileInputs.cache

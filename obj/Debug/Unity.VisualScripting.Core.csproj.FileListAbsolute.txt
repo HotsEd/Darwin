@@ -1,0 +1,2 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.VisualScripting.Core.csproj.AssemblyReference.cache
+C:\Users\Henrique\darwin\obj\Debug\Unity.VisualScripting.Core.csproj.CoreCompileInputs.cache

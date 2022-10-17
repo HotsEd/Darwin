@@ -1,0 +1,2 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.EditorCoroutines.Editor.csproj.AssemblyReference.cache
+C:\Users\Henrique\darwin\obj\Debug\Unity.EditorCoroutines.Editor.csproj.CoreCompileInputs.cache

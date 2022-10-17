@@ -11,7 +11,9 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private string nomeDoLevelDeJogo;
     [SerializeField] private List<GameObject> vidasImages;
-    private  int vidas ;
+    [SerializeField] private List<GameObject> especialImage;
+    public int especial = 1;
+    protected int vidas = 3 ;
     public float VelCamera = 1;
     public float LimiteCenarios;   
    
@@ -24,7 +26,6 @@ public class GameController : MonoBehaviour
         {
             Destroy(gameControllers[0]);
         }
-        DontDestroyOnLoad(gameObject);
         instance = this;
         
     }
@@ -36,10 +37,14 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        if(especial == 0)
+        {
+            especialImage[0].SetActive(false);
+        }
         if(vidas== 2)
         {
             vidasImages[0].SetActive(false);
-            
+           
         }
         if(vidas== 1)
         {
@@ -58,31 +63,33 @@ public class GameController : MonoBehaviour
     public void PerderVidas()
     {
         vidas--;
-         Debug.Log(vidas);
+        Debug.Log(vidas);
         if(vidas== 2)
         {
           //  Debug.log("");
             vidasImages[0].SetActive(false);
-
-            Destroy(vidasImages[0]);
-
-            SceneManager.LoadScene("jogo");
         }
         if(vidas== 1)
         {
             vidasImages[1].SetActive(false);
-            SceneManager.LoadScene("jogo");
         }
         if(vidas== 0)
         {
             vidasImages[2].SetActive(false);
-            SceneManager.LoadScene("jogo");
-
+            SceneManager.LoadScene(nomeDoLevelDeJogo);
         }
         
         
     }
-    
+    public void setEspecial()
+    {
+        especial--;
+        Debug.Log(especial);
+                if(especial == 0)
+        {
+            especialImage[0].SetActive(false);
+        }
+    }
 
     public void GameOver()
     {
@@ -101,7 +108,7 @@ public class GameController : MonoBehaviour
 
     public void ReiniciarLevel()
     {
-        SceneManager.LoadScene(nomeDoLevelDeJogo);
+
     }
 
 }

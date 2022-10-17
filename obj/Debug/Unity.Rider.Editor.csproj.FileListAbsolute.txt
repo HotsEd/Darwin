@@ -1,0 +1,2 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.Rider.Editor.csproj.AssemblyReference.cache
+C:\Users\Henrique\darwin\obj\Debug\Unity.Rider.Editor.csproj.CoreCompileInputs.cache

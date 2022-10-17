@@ -1,0 +1,1 @@
+C:\Users\Henrique\darwin\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj.CoreCompileInputs.cache

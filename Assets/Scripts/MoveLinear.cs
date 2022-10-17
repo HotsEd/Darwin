@@ -17,6 +17,6 @@ public class MoveLinear : MonoBehaviour
             Destroy(col.gameObject);
 
         }
-        Destroy(this.gameObject);
+       
     }
 }
