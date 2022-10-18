@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 156745436}
   - component: {fileID: 156745439}
   - component: {fileID: 156745438}
+  - component: {fileID: 156745440}
   m_Layer: 0
   m_Name: NextSceneCol
   m_TagString: Enemy
@@ -223,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 156745435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32.83, y: 3.22, z: 0}
-  m_LocalScale: {x: 2.9226089, y: -3.126685, z: 4.5968933}
+  m_LocalScale: {x: 2.813011, y: 1.9625, z: 4.5968933}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796625274}
@@ -250,6 +251,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156745435}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &156745440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156745435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1b3f13eb9ad4612bb986dde030f39a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &173471471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,7 +1969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &897032537
 AudioSource:
   m_ObjectHideFlags: 0

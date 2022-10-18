@@ -363,6 +363,7 @@
 "Assets/Scripts/NextScene.cs"
 "Assets/Scripts/PlayerGun.cs"
 "Assets/Scripts/PlayerSpecial.cs"
+"Assets/Scripts/SceneController.cs"
 "Assets/Scripts/TiroEnemy.cs"
 "Assets/Scripts/TorretaEnemy.cs"
 "Assets/Scripts/TriggerCenario.cs"

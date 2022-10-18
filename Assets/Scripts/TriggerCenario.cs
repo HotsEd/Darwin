@@ -7,13 +7,12 @@ public class TriggerCenario : MonoBehaviour
 
     private GameController controlador;
 
-    // Start is called before the first frame update
     void Start()
     {
         controlador = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -22,8 +21,13 @@ public class TriggerCenario : MonoBehaviour
     void OnTriggerEnter(Collider col){
 
         if(col.tag == "Player"){
-            //controlador.ReiniciarLevel();
+       
         }
-        
+        Debug.Log(col.tag);
+        if (col.tag == "Disparo")
+        {
+            Destroy(col.gameObject);
+            Debug.Log("morreu");
+        }
     }
 }
