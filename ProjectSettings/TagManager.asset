@@ -8,6 +8,10 @@ TagManager:
   - Disparo
   - Next
   - Special
+  - Wall
+  - Vida
+  - Especial
+  - UIController
   layers:
   - Default
   - TransparentFX

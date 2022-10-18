@@ -12,11 +12,19 @@ public class MoveLinear : MonoBehaviour
     
     void OnTriggerEnter(Collider col){
 
-        if(col.tag == "Enemy"){
+        if(col.tag == "Enemy")
+        {
 
             Destroy(col.gameObject);
 
         }
-       
+
+        if (col.tag == "Wall")
+        {
+
+            Destroy(this.gameObject);
+
+        }
+
     }
 }

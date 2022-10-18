@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject vidaContent, especialContent;
+    public GameObject vidaSprite, especialSprite;
     private static GameController instance;
-    public GameObject CameraPrincipal;
+    private GameObject CameraPrincipal;
+
+    public int Vida = 3, Especial = 1;
 
     [SerializeField] private string nomeDoLevelDeJogo;
-    [SerializeField] private List<GameObject> vidasImages;
-    [SerializeField] private List<GameObject> especialImage;
-    public int especial = 1;
-    protected int vidas = 3 ;
+
     public float VelCamera = 1;
     public float LimiteCenarios;   
    
@@ -24,8 +25,11 @@ public class GameController : MonoBehaviour
 
         if (gameControllers.Length > 1)
         {
-            Destroy(gameControllers[0]);
+            Destroy(gameControllers[1]);
         }
+
+        DontDestroyOnLoad(this.gameObject);
+
         instance = this;
         
     }
@@ -37,78 +41,81 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        if(especial == 0)
-        {
-            especialImage[0].SetActive(false);
-        }
-        if(vidas== 2)
-        {
-            vidasImages[0].SetActive(false);
-           
-        }
-        if(vidas== 1)
-        {
-            vidasImages[1].SetActive(false);
-            
-        }
-        if(vidas== 0)
-        {
-            vidasImages[2].SetActive(false);
-        
-            
-        }
-        
+        CameraPrincipal = GameObject.Find("Main Camera");
+
+        AtualizarHUD();
     }
 
     public void PerderVidas()
     {
-        vidas--;
-        Debug.Log(vidas);
-        if(vidas== 2)
+        Vida--;
+        //if(vidaContent.transform.childCount > 0)
+            //Destroy(vidaContent.transform.GetChild(vidaContent.transform.childCount - 1).gameObject);
+
+        AtualizarHUD();
+
+        if (Vida <= 0)
         {
-          //  Debug.log("");
-            vidasImages[0].SetActive(false);
+            GameOver();
         }
-        if(vidas== 1)
+        else
         {
-            vidasImages[1].SetActive(false);
+            ReiniciarLevel();
         }
-        if(vidas== 0)
-        {
-            vidasImages[2].SetActive(false);
-            SceneManager.LoadScene(nomeDoLevelDeJogo);
-        }
-        
-        
     }
     public void setEspecial()
     {
-        especial--;
-        Debug.Log(especial);
-                if(especial == 0)
-        {
-            especialImage[0].SetActive(false);
-        }
+        
+        Especial--;
+
+        AtualizarHUD();
+        //if (especialContent.transform.childCount > 0)
+            //Destroy(especialContent.transform.GetChild(especialContent.transform.childCount - 1).gameObject);
     }
 
     public void GameOver()
     {
-        if(vidasImages == null)
-        {
-            
-        }
+        Destroy(instance);
+        SceneManager.LoadScene(4);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(CameraPrincipal.transform.position.x <= LimiteCenarios)
+        if (CameraPrincipal == null)
+        {
+            CameraPrincipal = GameObject.Find("Main Camera");
+        }
+        if (CameraPrincipal.transform.position.x <= LimiteCenarios)
             CameraPrincipal.transform.Translate(Vector3.right * VelCamera * Time.deltaTime);
     }
 
     public void ReiniciarLevel()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void AtualizarHUD()
+    {
+        foreach (Transform child in vidaContent.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+        foreach (Transform child in especialContent.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        for (int i = 0; i < Vida; i++)
+        {
+            Instantiate(vidaSprite, vidaContent.transform.position, Quaternion.identity, vidaContent.transform);
+        }
+
+        for (int i = 0; i < Especial; i++)
+        {
+            Instantiate(especialSprite, especialContent.transform.position, Quaternion.identity, especialContent.transform);
+        }
+
+    }    
 
 }

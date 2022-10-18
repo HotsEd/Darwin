@@ -8,13 +8,14 @@ public class PlayerSpecial : MonoBehaviour
 
     void Update()
     {
+        /*
         if(Game.especial > 0) { 
             if (Input.GetKeyDown(key)){
                 GameObject clone = Instantiate(obj, transform.position, transform.rotation);
                 Destroy(clone,0.3f);
                 Game.setEspecial();
             }
-        }
+        }*/
 
     }
 }
