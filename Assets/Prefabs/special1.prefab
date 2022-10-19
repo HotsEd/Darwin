@@ -103,7 +103,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &8806386697079358959
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -204,11 +204,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!122 &2656257388282323037
 Halo:
   m_ObjectHideFlags: 0
@@ -354,7 +357,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &2269605489142280448
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -455,11 +458,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.5
+  m_MaskInteraction: 0
   m_Autodestruct: 1
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!122 &8484626407916114410
 Halo:
   m_ObjectHideFlags: 0
@@ -516,11 +522,11 @@ GameObject:
   - component: {fileID: 8152759974635177665}
   - component: {fileID: 8152759974635177664}
   - component: {fileID: 8152759974635177667}
-  - component: {fileID: 2495321206522042292}
   - component: {fileID: 575544942335678559}
+  - component: {fileID: 7437602997783908930}
   m_Layer: 0
   m_Name: special1
-  m_TagString: Disparo
+  m_TagString: Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8152759974635177677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -252.76, y: 129.14, z: 7.266}
+  m_LocalPosition: {x: -252.76, y: 139.51, z: 7.266}
   m_LocalScale: {x: 1.1325893, y: 1.1325893, z: 1.1325893}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -608,7 +614,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &8152759974635177664
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -709,11 +715,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.5
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!122 &8152759974635177667
 Halo:
   m_ObjectHideFlags: 0
@@ -726,20 +735,6 @@ Halo:
     serializedVersion: 2
     rgba: 4278255422
   m_Size: 0.2
---- !u!114 &2495321206522042292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152759974635177677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d3f0e6f8be14ee48c79bbd41bec89c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  dir: {x: 0, y: 1, z: 0}
 --- !u!54 &575544942335678559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -756,6 +751,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &7437602997783908930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8152759974635177677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec0d1aff8c6d46919a0172c5e232551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  dir: {x: 0, y: 0, z: 0}
 --- !u!1 &9176463540687210332
 GameObject:
   m_ObjectHideFlags: 0

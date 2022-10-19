@@ -5,30 +5,24 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private static UIController instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void Awake()
     {
 
-        GameObject[] gameControllers = GameObject.FindGameObjectsWithTag("UIController");
-
-        if (gameControllers.Length > 1)
+        if (instance == null)
         {
-            Destroy(gameControllers[1]);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+            return;
         }
 
         DontDestroyOnLoad(this.gameObject);
-        
+
 
     }
 

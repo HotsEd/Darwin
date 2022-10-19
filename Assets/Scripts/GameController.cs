@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public string ProxLevel;
     public GameObject vidaContent, especialContent;
     public GameObject vidaSprite, especialSprite;
     private static GameController instance;
     private GameObject CameraPrincipal;
+    private bool podeMorrer = true;
 
     public int Vida = 3, Especial = 1;
 
@@ -20,17 +22,18 @@ public class GameController : MonoBehaviour
    
     void Awake()
     {
-        
-        GameObject[] gameControllers = GameObject.FindGameObjectsWithTag("GameController");
 
-        if (gameControllers.Length > 1)
+        if(instance == null)
         {
-            Destroy(gameControllers[1]);
+            instance = this;
         }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }    
 
         DontDestroyOnLoad(this.gameObject);
-
-        instance = this;
         
     }
 
@@ -46,37 +49,61 @@ public class GameController : MonoBehaviour
         AtualizarHUD();
     }
 
+    public void GanharVida()
+    {
+        Vida++;
+        AtualizarHUD();
+    }
+
+    public void GanharEspecial()
+    {
+        Especial++;
+        AtualizarHUD();
+    }
+
     public void PerderVidas()
     {
-        Vida--;
-        //if(vidaContent.transform.childCount > 0)
-            //Destroy(vidaContent.transform.GetChild(vidaContent.transform.childCount - 1).gameObject);
-
-        AtualizarHUD();
-
-        if (Vida <= 0)
+        if (podeMorrer == true)
         {
-            GameOver();
-        }
-        else
-        {
-            ReiniciarLevel();
+            podeMorrer = false;
+            Vida--;
+
+            AtualizarHUD();
+
+            StartCoroutine(ligaMorte());
+
+            if (Vida <= 0)
+            {
+                GameOver();
+            }
+            else
+            {
+                ReiniciarLevel();
+            }
+
         }
     }
+
+    private IEnumerator ligaMorte()
+    {
+        yield return new WaitForSeconds(1);
+        podeMorrer = true;
+    }
+
+
     public void setEspecial()
     {
         
         Especial--;
 
         AtualizarHUD();
-        //if (especialContent.transform.childCount > 0)
-            //Destroy(especialContent.transform.GetChild(especialContent.transform.childCount - 1).gameObject);
+
     }
 
     public void GameOver()
     {
         Destroy(instance);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(ProxLevel);
     }
 
     // Update is called once per frame

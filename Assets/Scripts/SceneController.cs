@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    public string nomeCena;
+
     void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.name == "peixim")
+    {        
+        if (other.CompareTag("Player"))
         {
-            CarregaCena("Boss01");
+            
+            CarregaCena(nomeCena);            
         }
     }
     public void CarregaCena(string nomeCena)

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TiroEnemy : MonoBehaviour
 {
-    //private GameController controlador;
+    private GameController controlador;
 
     // Start is called before the first frame update
     void Start()
     {
-        //controlador = GameObject.Find("GameController").GetComponent<GameController>();
+        controlador = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,12 @@ public class TiroEnemy : MonoBehaviour
     void OnTriggerEnter(Collider col){
 
         if(col.tag == "Player"){
-            //controlador.ReiniciarLevel();
+            controlador.ReiniciarLevel();
+        }
+
+        if (col.tag == "Wall")
+        {            
+            Destroy(gameObject);
         }
 
     }

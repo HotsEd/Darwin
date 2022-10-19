@@ -37,15 +37,15 @@ public class Player : MonoBehaviour
         
         if (Input.GetKeyDown(keyTiro))
         {
-            GameObject clone = Instantiate(objTiro, transform.position, transform.rotation);
+            GameObject clone = Instantiate(objTiro, transform.GetChild(0).transform.position, transform.rotation);
             Destroy(clone, 0.3f);
         }
 
         
         if(controller.Especial > 0) { 
             if (Input.GetKeyDown(keyEspecial)){
-                GameObject clone = Instantiate(objEspecial, transform.position, transform.rotation);
-                Destroy(clone,0.3f);
+                GameObject clone = Instantiate(objEspecial, new Vector3(transform.position.x+4,0,0), Quaternion.identity);
+                Destroy(clone,4);
                 controller.setEspecial();
             }
         }

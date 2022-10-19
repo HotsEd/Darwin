@@ -21,7 +21,6 @@ public class MoveLinear : MonoBehaviour
 
         if (col.tag == "Wall")
         {
-
             Destroy(this.gameObject);
 
         }

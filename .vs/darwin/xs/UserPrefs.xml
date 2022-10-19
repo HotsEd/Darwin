@@ -1,11 +1,17 @@
 ﻿<Properties StartupConfiguration="{76B00F49-CE67-B2B4-DB15-58336B542447}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="60" Column="94" />
-      <File FileName="Assets/Scripts/TriggerCenario.cs" Line="31" Column="10" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="77" Column="1" />
-      <File FileName="Assets/Scripts/PlayerSpecial.cs" Line="7" Column="25" />
-      <File FileName="Assets/Scripts/MoveLinear.cs" Line="27" Column="10" />
+      <File FileName="Assets/Scripts/Player.cs" Line="51" Column="10" />
+      <File FileName="Assets/Scripts/TriggerCenario.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="117" Column="39" />
+      <File FileName="Assets/Scripts/PlayerSpecial.cs" />
+      <File FileName="Assets/Scripts/MoveLinear.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="16" Column="29" />
+      <File FileName="Assets/Scripts/MenuPrincipalManager.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/SceneController.cs" Line="22" Column="20" />
+      <File FileName="Assets/Scripts/TiroEnemy.cs" Line="10" Column="17" />
+      <File FileName="Assets/Scripts/ItemGenerico.cs" Line="21" Column="14" />
+      <File FileName="Assets/Scripts/TiroEspecial.cs" Line="19" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,28 +19,22 @@
           <Node name="darwin" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
+                <Node name=".vs" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
                 <Node name="Player.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="Packages" expanded="True" />
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="11885738-9145-4722-b6cf-766d91232431" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d2d23048-11d2-42bd-b252-415b0a6b61c7" />
 </Properties>

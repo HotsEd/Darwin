@@ -23,11 +23,11 @@ public class TriggerCenario : MonoBehaviour
         if(col.tag == "Player"){
        
         }
-        Debug.Log(col.tag);
+        //Debug.Log(col.tag);
         if (col.tag == "Disparo")
         {
             Destroy(col.gameObject);
-            Debug.Log("morreu");
+            //Debug.Log("morreu");
         }
     }
 }
