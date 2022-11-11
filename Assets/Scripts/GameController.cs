@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     private GameObject CameraPrincipal;
     private bool podeMorrer = true;
 
-    public int Vida = 3, Especial = 1;
+    public int Vida = 3, Especial = 1, VidaBoss = 10;
 
     [SerializeField] private string nomeDoLevelDeJogo;
 
@@ -37,6 +37,7 @@ public class GameController : MonoBehaviour
         
     }
 
+
     public static GameController Instance()
     {
         return instance;
@@ -59,6 +60,17 @@ public class GameController : MonoBehaviour
     {
         Especial++;
         AtualizarHUD();
+    }
+
+    public void AumentarVidaBoss(int value)
+    {
+        Debug.Log("VidasBoss = "+ VidaBoss);
+        VidaBoss = value;
+    }
+
+    public void MinusVidaBoss()
+    {
+        VidaBoss--;
     }
 
     public void PerderVidas()
