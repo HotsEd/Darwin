@@ -13,7 +13,6 @@ public class MoveLinear : MonoBehaviour
     void Start()
     {
         controlador = GameObject.Find("GameController").GetComponent<GameController>();
-        boss = GameObject.FindWithTag("BossObject");
     }
 
     void Update()
@@ -37,6 +36,7 @@ public class MoveLinear : MonoBehaviour
         }
         
         if(col.tag == "Boss"){
+            boss = GameObject.FindWithTag("BossObject");
             controlador.MinusVidaBoss();
             if(controlador.VidaBoss == 0){
                 Destroy(boss);
