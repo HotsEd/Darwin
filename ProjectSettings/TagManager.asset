@@ -12,6 +12,8 @@ TagManager:
   - Vida
   - Especial
   - UIController
+  - Boss
+  - BossObject
   layers:
   - Default
   - TransparentFX

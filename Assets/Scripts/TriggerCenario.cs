@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerCenario : MonoBehaviour
 {
-
+    
     private GameController controlador;
 
     void Start()
@@ -12,7 +12,6 @@ public class TriggerCenario : MonoBehaviour
         controlador = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
-    
     void Update()
     {
         
@@ -23,9 +22,8 @@ public class TriggerCenario : MonoBehaviour
         if(col.tag == "Player"){
        
         }
-        //Debug.Log(col.tag);
-        if (col.tag == "Disparo")
-        {
+
+        if (col.tag == "Disparo"){
             Destroy(col.gameObject);
             //Debug.Log("morreu");
         }

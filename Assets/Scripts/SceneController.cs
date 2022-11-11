@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public string nomeCena;
+    private GameController controller;
 
     void OnTriggerEnter(Collider other)
     {        
@@ -16,9 +17,16 @@ public class SceneController : MonoBehaviour
         }
     }
     public void CarregaCena(string nomeCena)
-
     {
-        Debug.Log("carregou");
+        Debug.Log("Nome Da Cena = "+nomeCena);
+        // if(nomeCena == "Boss01")
+        // {
+        //     controller.AumentarVidaBoss(10);
+        // } else if(nomeCena == "Boss02") {
+        //     controller.AumentarVidaBoss(20);
+        // } else if(nomeCena == "Boss03") {
+        //     controller.AumentarVidaBoss(50);
+        // }
         SceneManager.LoadScene(nomeCena);
     }
 }
