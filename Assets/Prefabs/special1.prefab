@@ -103,7 +103,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &8806386697079358959
 TrailRenderer:
-  serializedVersion: 3
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -204,14 +204,11 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
-  m_ApplyActiveColorSpace: 0
 --- !u!122 &2656257388282323037
 Halo:
   m_ObjectHideFlags: 0
@@ -357,7 +354,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &2269605489142280448
 TrailRenderer:
-  serializedVersion: 3
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -458,14 +455,11 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.5
-  m_MaskInteraction: 0
   m_Autodestruct: 1
   m_Emitting: 1
-  m_ApplyActiveColorSpace: 0
 --- !u!122 &8484626407916114410
 Halo:
   m_ObjectHideFlags: 0
@@ -614,7 +608,7 @@ BoxCollider:
   m_Center: {x: 0, y: -0.0000026518221, z: 0.000000043831772}
 --- !u!96 &8152759974635177664
 TrailRenderer:
-  serializedVersion: 3
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -715,14 +709,11 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.5
-  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
-  m_ApplyActiveColorSpace: 0
 --- !u!122 &8152759974635177667
 Halo:
   m_ObjectHideFlags: 0
