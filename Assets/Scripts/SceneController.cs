@@ -31,6 +31,7 @@ public class SceneController : MonoBehaviour
         } else if(nomeCena == "Boss03") {
             controller.AumentarVidaBoss(50);
         }
+
         SceneManager.LoadScene(nomeCena);
     }
 }

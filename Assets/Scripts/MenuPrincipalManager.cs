@@ -42,4 +42,9 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         Application.Quit();
     }
+    
+    public void Configuracoes()
+    {
+        SceneManager.LoadScene("Configuracoes");
+    }
 }

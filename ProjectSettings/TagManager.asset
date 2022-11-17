@@ -12,6 +12,7 @@ TagManager:
   - Vida
   - Especial
   - UIController
+  - Audio
   layers:
   - Default
   - TransparentFX
