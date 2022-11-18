@@ -7,6 +7,7 @@ public class MenuPrincipalManager : MonoBehaviour
 {
     [SerializeField] private string nomeDoLevelDeJogo;
     [SerializeField] private GameObject painelMenuInicial;
+    public KeyCode skip;
 
     public void Awake()
     {
@@ -36,6 +37,15 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Jogar()
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);
+        if(Input.GetKeyDown(skip)){
+            SceneManager.LoadScene(nomeDoLevelDeJogo);
+        }
+    }
+
+    public void Update(){
+        if(Input.GetKeyDown(skip)){
+            SceneManager.LoadScene(nomeDoLevelDeJogo);
+        }
     }
 
     public void SairJogo()
