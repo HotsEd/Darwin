@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     private static GameController instance;
     private GameObject CameraPrincipal;
     private bool podeMorrer = true;
+    private bool isPaused;
 
     public int Vida = 3, Especial = 1, VidaBoss = 10;
 
@@ -95,7 +96,16 @@ public class GameController : MonoBehaviour
 
         }
     }
-
+    void PauseGame ()
+    {
+        Time.timeScale = 0;
+        isPaused=true;
+    }
+    void ResumeGame ()
+    {
+        Time.timeScale = 1;
+        isPaused=false;
+    }
     private IEnumerator ligaMorte()
     {
         yield return new WaitForSeconds(1);
@@ -121,6 +131,12 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if  (Input.GetKeyDown("escape"))
+        {
+            if(isPaused==false)
+            {PauseGame();}
+            else{ResumeGame();}
+        }
         if (CameraPrincipal == null)
         {
             CameraPrincipal = GameObject.Find("Main Camera");

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -952,6 +952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: CinematicIntro
   painelMenuInicial: {fileID: 1009120464}
+  skip: 0
 --- !u!1 &878047987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +2250,10 @@ MonoBehaviour:
 
     TIRO -Z
 
-    ESPECIAL - X'
+    ESPECIAL - X
+
+
+    PAUSE - ESC'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
   m_sharedMaterial: {fileID: 4247533851004203805, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
@@ -2312,7 +2316,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -18.340364}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
