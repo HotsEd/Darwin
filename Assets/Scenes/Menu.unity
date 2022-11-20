@@ -1322,6 +1322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: CinematicIntro
   painelMenuInicial: {fileID: 1009120464}
+  painelAviso: {fileID: 1980953097}
   skip: 0
 --- !u!1 &878047987
 GameObject:
@@ -2780,7 +2781,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 802838379}
         m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: SairJogo
+        m_MethodName: AbrirAviso
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3670,7 +3671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1980953098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3953,7 +3954,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 802838379}
         m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Jogar
+        m_MethodName: FecharAviso
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

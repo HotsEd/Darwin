@@ -1435,6 +1435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeDoLevelDeJogo: Menu
   painelMenuInicial: {fileID: 1009120464}
+  painelAviso: {fileID: 0}
   skip: 0
 --- !u!1 &878047987
 GameObject:
