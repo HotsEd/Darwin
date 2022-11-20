@@ -7,6 +7,7 @@ public class MenuPrincipalManager : MonoBehaviour
 {
     [SerializeField] private string nomeDoLevelDeJogo;
     [SerializeField] private GameObject painelMenuInicial;
+    [SerializeField] private GameObject painelAviso;
     public KeyCode skip;
 
     public void Awake()
@@ -61,5 +62,15 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Creditos()
     {
         SceneManager.LoadScene("Creditos");
+    }
+
+    public void AbrirAviso()
+    {
+        painelAviso.SetActive(true);
+    }
+    
+    public void FecharAviso()
+    {
+        painelAviso.SetActive(false);
     }
 }
