@@ -57,4 +57,9 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         SceneManager.LoadScene("Configuracoes");
     }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
 }
