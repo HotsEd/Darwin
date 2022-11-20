@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     private GameObject CameraPrincipal;
     private bool podeMorrer = true;
     private bool isPaused;
+    public GameObject pauseMenuUI;
 
     public int Vida = 3, Especial = 1, VidaBoss = 10;
 
@@ -98,11 +99,13 @@ public class GameController : MonoBehaviour
     }
     void PauseGame ()
     {
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         isPaused=true;
     }
     void ResumeGame ()
     {
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         isPaused=false;
     }
