@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -419,7 +419,7 @@ RectTransform:
   m_GameObject: {fileID: 293781222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44506997, y: 0.44506997, z: 0.44506997}
+  m_LocalScale: {x: 0.3585261, y: 0.3585261, z: 0.3585261}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 694018792}
@@ -428,7 +428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -137}
+  m_AnchoredPosition: {x: -535, y: -463}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293781224
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONFIGURACOES
+  m_text: CONFIGs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
   m_sharedMaterial: {fileID: 4247533851004203805, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS"
+  m_text: CREDITOS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
   m_sharedMaterial: {fileID: 4247533851004203805, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
@@ -2187,7 +2187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: -2.0000076}
+  m_AnchoredPosition: {x: 11, y: -56}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207824142
@@ -2999,7 +2999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 232, y: -323}
+  m_AnchoredPosition: {x: 232, y: -236}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.89, y: 0.5}
 --- !u!114 &1643732695
@@ -3134,7 +3134,7 @@ RectTransform:
   m_GameObject: {fileID: 1686458808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44506997, y: 0.44506997, z: 0.44506997}
+  m_LocalScale: {x: 0.3545917, y: 0.3545917, z: 0.3545917}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330653168}
@@ -3143,7 +3143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: -2.0000076}
+  m_AnchoredPosition: {x: -803, y: -462}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686458810
@@ -3268,7 +3268,7 @@ Transform:
   m_GameObject: {fileID: 1757942882}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 14, y: 159, z: -309.19974}
-  m_LocalScale: {x: 45.209454, y: 0.2506439, z: 22.020346}
+  m_LocalScale: {x: 63.591618, y: 0.35255572, z: 30.973818}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1784475607}
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "N\xC3O"
+  m_text: NAO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
   m_sharedMaterial: {fileID: 4247533851004203805, guid: ae0bf55e00e19954489cd084f10e0da7, type: 2}
@@ -4091,7 +4091,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: v5.0
+  m_text: v6.0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
