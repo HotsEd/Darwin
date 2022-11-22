@@ -50,6 +50,8 @@ public class GameController : MonoBehaviour
         CameraPrincipal = GameObject.Find("Main Camera");
 
         AtualizarHUD();
+       
+        
     }
 
     public void GanharVida()

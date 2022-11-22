@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float Speed;
     public KeyCode keyTiro, keyEspecial;
     public GameObject objTiro, objEspecial;
+    public GameObject explosion;
 
     private GameController controller;
 
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             controller.PerderVidas();
-            
+            Instantiate(explosion, transform.position, transform.rotation);
             Destroy(other.gameObject);
         }
     }
