@@ -9,6 +9,7 @@ public class MoveLinear : MonoBehaviour
 
     private GameController controlador;
     private GameObject boss;
+    public GameObject explosion;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class MoveLinear : MonoBehaviour
 
         if(col.tag == "Enemy")
         {
-
+            Instantiate(explosion, transform.position, transform.rotation);
             Destroy(col.gameObject);
 
         }
@@ -39,6 +40,16 @@ public class MoveLinear : MonoBehaviour
             boss = GameObject.FindWithTag("BossObject");
             controlador.MinusVidaBoss();
             if(controlador.VidaBoss == 0){
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
                 Destroy(boss);
             }
         }

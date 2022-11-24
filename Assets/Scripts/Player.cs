@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public KeyCode keyTiro, keyEspecial;
     public GameObject objTiro, objEspecial;
     public GameObject explosion;
+    private bool move = true;
 
     private GameController controller;
 
@@ -26,16 +27,18 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-    Vector3 lateralMovement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        if(move){
+        Vector3 lateralMovement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += lateralMovement * Time.deltaTime * Speed;
         Vector3 verticalMovement = new Vector3(0f, Input.GetAxis("Vertical"), 0f);
         transform.position += verticalMovement * Time.deltaTime * Speed;
+        }
     }
 
 
     void Shot()
     {
-        
+        if(move){
         if (Input.GetKeyDown(keyTiro))
         {
             GameObject clone = Instantiate(objTiro, transform.GetChild(0).transform.position, transform.rotation);
@@ -50,7 +53,7 @@ public class Player : MonoBehaviour
                 controller.setEspecial();
             }
         }
-
+        }
     }
 
 
@@ -72,6 +75,9 @@ public class Player : MonoBehaviour
         {
             controller.PerderVidas();
             Instantiate(explosion, transform.position, transform.rotation);
+            if(!controller.getPodeMorrer()){
+                move = false;
+            }
             Destroy(other.gameObject);
         }
     }

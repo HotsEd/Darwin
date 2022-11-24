@@ -13,6 +13,8 @@ TagManager:
   - Especial
   - UIController
   - Audio
+  - BossObject
+  - Boss
   layers:
   - Default
   - TransparentFX

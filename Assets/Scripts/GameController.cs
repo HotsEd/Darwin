@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public GameObject vidaSprite, especialSprite;
     private static GameController instance;
     private GameObject CameraPrincipal;
-    private bool podeMorrer = true;
+    public bool podeMorrer = true;
     private bool isPaused;
     public GameObject pauseMenuUI;
 
@@ -90,11 +90,11 @@ public class GameController : MonoBehaviour
 
             if (Vida <= 0)
             {
-                GameOver();
+                StartCoroutine(gameOverRoutine());
             }
             else
             {
-                ReiniciarLevel();
+                StartCoroutine(esperarMorrer());
             }
 
         }
@@ -117,6 +117,17 @@ public class GameController : MonoBehaviour
         podeMorrer = true;
     }
 
+    private IEnumerator gameOverRoutine()
+    {
+        yield return new WaitForSeconds(1);
+        GameOver();
+    }
+    
+    private IEnumerator esperarMorrer()
+    {
+        yield return new WaitForSeconds(1);
+        ReiniciarLevel();
+    }
 
     public void setEspecial()
     {
@@ -176,6 +187,15 @@ public class GameController : MonoBehaviour
             Instantiate(especialSprite, especialContent.transform.position, Quaternion.identity, especialContent.transform);
         }
 
+    }
+
+    public bool getPodeMorrer()
+    {
+        return podeMorrer;
     }    
 
+    public void changePodeMorrer(bool mode)
+    {
+        podeMorrer = mode;
+    }
 }

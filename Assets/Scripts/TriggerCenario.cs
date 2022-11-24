@@ -6,7 +6,7 @@ public class TriggerCenario : MonoBehaviour
 {
     
     private GameController controlador;
-    public GameObject explosion;
+ 
 
     void Start()
     {
@@ -25,7 +25,6 @@ public class TriggerCenario : MonoBehaviour
         }
 
         if (col.tag == "Disparo"){
-            Instantiate(explosion, transform.position, transform.rotation);
             Destroy(col.gameObject);
             //Debug.Log("morreu");
         }
