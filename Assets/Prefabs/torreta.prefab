@@ -52,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389228664038083682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -153,6 +153,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1732857472210147032}
     m_Modifications:
+    - target: {fileID: 11848998121728387, guid: efc79e065472f45f5804c967df8e394f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 231377657165691305, guid: efc79e065472f45f5804c967df8e394f, type: 3}
       propertyPath: m_Name
       value: bomba
@@ -237,6 +241,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2848620182094728912, guid: efc79e065472f45f5804c967df8e394f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598755731702672566, guid: efc79e065472f45f5804c967df8e394f, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4663636496385659515, guid: cc750819aecb14157b783b651360a6bd, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efc79e065472f45f5804c967df8e394f, type: 3}
 --- !u!4 &3089986902918180054 stripped
