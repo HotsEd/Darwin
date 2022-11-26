@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 757132341977883846}
   - component: {fileID: 3827695834685209394}
   - component: {fileID: 896194358611176511}
+  - component: {fileID: 4370402196293930955}
   m_Layer: 5
   m_Name: Canvas Pause Menu
   m_TagString: Untagged
@@ -379,7 +380,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 757132342477055876}
-  - {fileID: 7084935980724560147}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -456,14 +456,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757132341977883847}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c875e69a726aee34abf1b80c9e21339e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modal: 0
-  m_Toggle: {fileID: 4778265351644976101}
-  m_Text: {fileID: 0}
+  toggle: {fileID: 4778265351644976101}
 --- !u!114 &896194358611176511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +478,18 @@ MonoBehaviour:
   painelMenuInicial: {fileID: 757132342477055877}
   painelAviso: {fileID: 3499745198296604384}
   skip: 0
+--- !u!114 &4370402196293930955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757132341977883847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c9d33c4e8a9fb4fa80f2e5f32d1b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &757132342477055877
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +522,7 @@ RectTransform:
   m_Children:
   - {fileID: 757132342961781415}
   - {fileID: 7081719284276376485}
+  - {fileID: 7084935980724560147}
   m_Father: {fileID: 757132341977883851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1264,8 +1275,8 @@ RectTransform:
   - {fileID: 3285916287080120053}
   - {fileID: 9082285926641039074}
   - {fileID: 2169820107096254277}
-  m_Father: {fileID: 757132341977883851}
-  m_RootOrder: 1
+  m_Father: {fileID: 757132342477055876}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1532,10 +1543,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4370402196293930955}
+        m_TargetAssemblyTypeName: ControleVolume, Assembly-CSharp
+        m_MethodName: VolumeMaster
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4932678008615366116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1648,7 @@ MonoBehaviour:
       - m_Target: {fileID: 3827695834685209394}
         m_TargetAssemblyTypeName: ChangeGodMode, Assembly-CSharp
         m_MethodName: GhangeGod
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

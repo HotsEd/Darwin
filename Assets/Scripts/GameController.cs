@@ -81,7 +81,6 @@ public class GameController : MonoBehaviour
     {
         if (podeMorrer == true)
         {
-            podeMorrer = false;
             Vida--;
 
             AtualizarHUD();

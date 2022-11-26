@@ -73,12 +73,13 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            var podeMorrer = controller.getPodeMorrer();
+            if(podeMorrer){
             controller.PerderVidas();
             Instantiate(explosion, transform.position, transform.rotation);
-            if(!controller.getPodeMorrer()){
-                move = false;
-            }
+            move = false;
             Destroy(other.gameObject);
+            }
         }
     }
 }

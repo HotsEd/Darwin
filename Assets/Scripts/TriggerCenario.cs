@@ -26,7 +26,6 @@ public class TriggerCenario : MonoBehaviour
 
         if (col.tag == "Disparo"){
             Destroy(col.gameObject);
-            //Debug.Log("morreu");
         }
     }
 }

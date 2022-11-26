@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1555361810}
   m_HandleRect: {fileID: 1555361809}
   m_Direction: 2
-  m_Value: 1.0000001
+  m_Value: 1.0000004
   m_Size: 0.33333337
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 830001215}
   m_HandleRect: {fileID: 830001214}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4252,7 +4252,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380045108}
   m_HandleRect: {fileID: 380045107}
   m_Direction: 2
-  m_Value: 1.0000001
+  m_Value: 1.0000004
   m_Size: 0.33333337
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   especialContent: {fileID: 2107480162}
   vidaSprite: {fileID: 5041354245133496693, guid: c4c1804353a584dd39948d4186ee90a6, type: 3}
   especialSprite: {fileID: 6670791301103708216, guid: 2745751f784994d4ca508372c14a89bc, type: 3}
-  podeMorrer: 1
+  podeMorrer: 0
   pauseMenuUI: {fileID: 810047585}
   Vida: 3
   Especial: 1
@@ -6185,7 +6185,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 812607103}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
