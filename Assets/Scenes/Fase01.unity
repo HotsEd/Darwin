@@ -849,7 +849,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1555361810}
   m_HandleRect: {fileID: 1555361809}
   m_Direction: 2
-  m_Value: 1.0000004
+  m_Value: 1.0000001
   m_Size: 0.33333334
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6854,7 +6854,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380045108}
   m_HandleRect: {fileID: 380045107}
   m_Direction: 2
-  m_Value: 1.0000004
+  m_Value: 1.0000001
   m_Size: 0.33333334
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10103,7 +10103,7 @@ MonoBehaviour:
   especialContent: {fileID: 2107480162}
   vidaSprite: {fileID: 5041354245133496693, guid: c4c1804353a584dd39948d4186ee90a6, type: 3}
   especialSprite: {fileID: 6670791301103708216, guid: 2745751f784994d4ca508372c14a89bc, type: 3}
-  podeMorrer: 0
+  podeMorrer: 1
   pauseMenuUI: {fileID: 551909716}
   Vida: 3
   Especial: 1
@@ -10539,7 +10539,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 812607103}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15626,6 +15626,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2728091778050535707, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827695834685209394, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
+      propertyPath: modal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827695834685209394, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3876091965279445690, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
