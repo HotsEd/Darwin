@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public KeyCode keyTiro, keyEspecial;
     public GameObject objTiro, objEspecial;
     public GameObject explosion;
+    public MeshRenderer peixin;
     private bool move = true;
 
     private GameController controller;
@@ -77,6 +78,7 @@ public class Player : MonoBehaviour
             if(podeMorrer){
             controller.PerderVidas();
             Instantiate(explosion, transform.position, transform.rotation);
+            peixin.enabled = false;
             move = false;
             Destroy(other.gameObject);
             }

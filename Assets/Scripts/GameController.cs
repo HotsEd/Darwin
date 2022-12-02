@@ -35,6 +35,9 @@ public class GameController : MonoBehaviour
             return;
         }    
 
+        var godBool = (PlayerPrefs.GetInt("GodMod") != 0);
+        podeMorrer = godBool;
+        
         DontDestroyOnLoad(this.gameObject);
         
     }
@@ -50,8 +53,7 @@ public class GameController : MonoBehaviour
         CameraPrincipal = GameObject.Find("Main Camera");
 
         AtualizarHUD();
-       
-        
+
     }
 
     public void GanharVida()
@@ -68,7 +70,6 @@ public class GameController : MonoBehaviour
 
     public void AumentarVidaBoss(int value)
     {
-        Debug.Log("VidasBoss = "+ VidaBoss);
         VidaBoss = value;
     }
 
@@ -81,6 +82,7 @@ public class GameController : MonoBehaviour
     {
         if (podeMorrer == true)
         {
+            podeMorrer = false;
             Vida--;
 
             AtualizarHUD();
@@ -125,6 +127,7 @@ public class GameController : MonoBehaviour
     private IEnumerator esperarMorrer()
     {
         yield return new WaitForSeconds(1);
+        podeMorrer = true;
         ReiniciarLevel();
     }
 
@@ -146,6 +149,30 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftAlt))
+        {
+            if (Input.GetKeyDown(KeyCode.F1))
+            {
+                SceneManager.LoadScene("Cinematic01");
+            }
+        }
+        
+        if (Input.GetKey(KeyCode.LeftAlt))
+        {
+            if (Input.GetKeyDown(KeyCode.F2))
+            {
+                SceneManager.LoadScene("Cinematic02");
+            }
+        }
+        
+        if (Input.GetKey(KeyCode.LeftAlt))
+        {
+            if (Input.GetKeyDown(KeyCode.F3))
+            {
+                SceneManager.LoadScene("Cinematic03");
+            }
+        }
+        
         if  (Input.GetKeyDown("escape"))
         {
             if(isPaused==false)
@@ -195,6 +222,7 @@ public class GameController : MonoBehaviour
 
     public void changePodeMorrer(bool mode)
     {
+        PlayerPrefs.SetInt("GodMod", (mode ? 1 : 0));
         podeMorrer = mode;
     }
 }

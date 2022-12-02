@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MoveLinear : MonoBehaviour
 {
@@ -25,6 +27,7 @@ public class MoveLinear : MonoBehaviour
 
         if(col.tag == "Enemy")
         {
+            Destroy(this.gameObject);
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(col.gameObject);
 
@@ -33,11 +36,16 @@ public class MoveLinear : MonoBehaviour
         if (col.tag == "Wall")
         {
             Destroy(this.gameObject);
-
         }
         
         if(col.tag == "Boss"){
+            Destroy(this.gameObject);
+            Instantiate(explosion, transform.position, transform.rotation);
             boss = GameObject.FindWithTag("BossObject");
+            if (boss == null)
+            {
+                boss = GameObject.FindWithTag("Boss");
+            }
             controlador.MinusVidaBoss();
             if(controlador.VidaBoss == 0){
                 Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
@@ -50,6 +58,7 @@ public class MoveLinear : MonoBehaviour
                 Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
                 Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
                 Instantiate(explosion, (transform.position + new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(-1.5f, 1.5f), 0.0f)), transform.rotation);
+                
                 Destroy(boss);
             }
         }

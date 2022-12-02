@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -849,8 +849,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1555361810}
   m_HandleRect: {fileID: 1555361809}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.33333334
+  m_Value: 1.0000001
+  m_Size: 0.3333333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5741,7 +5741,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 830001214}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6931,8 +6931,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380045108}
   m_HandleRect: {fileID: 380045107}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.33333334
+  m_Value: 1.0000001
+  m_Size: 0.3333333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10184,7 +10184,7 @@ MonoBehaviour:
   especialContent: {fileID: 2107480162}
   vidaSprite: {fileID: 5041354245133496693, guid: c4c1804353a584dd39948d4186ee90a6, type: 3}
   especialSprite: {fileID: 6670791301103708216, guid: 2745751f784994d4ca508372c14a89bc, type: 3}
-  podeMorrer: 0
+  podeMorrer: 1
   pauseMenuUI: {fileID: 551909716}
   Vida: 3
   Especial: 1
@@ -13961,6 +13961,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4819d5a2d856b4295ad41d3928001951, type: 3}
+      propertyPath: m_TagString
+      value: PlayerMesh
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4819d5a2d856b4295ad41d3928001951, type: 3}
 --- !u!4 &1959957483 stripped
@@ -13981,6 +13985,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02773255, y: 0.015120286, z: 0.002581743}
   m_Center: {x: -0.0030969586, y: -0.0011480697, z: 0.0012908715}
+--- !u!23 &1959957487 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 4819d5a2d856b4295ad41d3928001951, type: 3}
+  m_PrefabInstance: {fileID: 1959957482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1961974026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7288c55eb489c2e45a3dc1fd3b0ae5bc, type: 3}
@@ -15120,7 +15129,8 @@ MonoBehaviour:
   keyEspecial: 120
   objTiro: {fileID: 8152759974635177677, guid: 14c176e084e8d4872a252dcc62db8618, type: 3}
   objEspecial: {fileID: 7186629990019508675, guid: 29a621aefce7646878292939b5bf01e8, type: 3}
-  explosion: {fileID: 3891598400167960368, guid: fcf21b3e774db4a24b82ac26b6035f77, type: 3}
+  explosion: {fileID: 3891598400167960368, guid: eee9dc6f792ee284cbe038b02af23c88, type: 3}
+  peixin: {fileID: 1959957487}
 --- !u!1001 &2098420991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15817,7 +15827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3827695834685209394, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3876091965279445690, guid: c03a84a0e1def1b4d86728e2e69a6054, type: 3}
       propertyPath: m_AnchorMax.x

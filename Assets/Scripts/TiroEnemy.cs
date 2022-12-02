@@ -20,10 +20,6 @@ public class TiroEnemy : MonoBehaviour
 
     void OnTriggerEnter(Collider col){
 
-        if(col.tag == "Player"){
-            controlador.ReiniciarLevel();
-        }
-
         if (col.tag == "Wall")
         {            
             Destroy(gameObject);
