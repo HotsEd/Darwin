@@ -932,8 +932,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1555361810}
   m_HandleRect: {fileID: 1555361809}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.33333337
+  m_Value: 1.0000001
+  m_Size: 0.3333333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6970,8 +6970,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 830001215}
   m_HandleRect: {fileID: 830001214}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9107,8 +9107,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380045108}
   m_HandleRect: {fileID: 380045107}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.33333337
+  m_Value: 1.0000001
+  m_Size: 0.3333333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19634,6 +19634,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4819d5a2d856b4295ad41d3928001951, type: 3}
   m_PrefabInstance: {fileID: 1959957482}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1959957484 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 4819d5a2d856b4295ad41d3928001951, type: 3}
+  m_PrefabInstance: {fileID: 1959957482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1959957486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21297,7 +21302,8 @@ MonoBehaviour:
   keyEspecial: 120
   objTiro: {fileID: 8152759974635177677, guid: 14c176e084e8d4872a252dcc62db8618, type: 3}
   objEspecial: {fileID: 7186629990019508675, guid: 29a621aefce7646878292939b5bf01e8, type: 3}
-  explosion: {fileID: 3891598400167960368, guid: fcf21b3e774db4a24b82ac26b6035f77, type: 3}
+  explosion: {fileID: 3891598400167960368, guid: eee9dc6f792ee284cbe038b02af23c88, type: 3}
+  peixin: {fileID: 1959957484}
 --- !u!1001 &2103499662
 PrefabInstance:
   m_ObjectHideFlags: 0

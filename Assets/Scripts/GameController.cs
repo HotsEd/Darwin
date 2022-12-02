@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
         }    
 
         var godBool = (PlayerPrefs.GetInt("GodMod") != 0);
-        podeMorrer = godBool;
+        podeMorrer = !godBool;
         
         DontDestroyOnLoad(this.gameObject);
         
